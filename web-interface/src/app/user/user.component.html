@@ -1,0 +1,19 @@
+<div class="p-2 col-md-2 offset-md-5">
+
+    <div class="form-group">
+        <form  [formGroup]="userForm" (ngSubmit)="goNext()" >
+        <label>Entrez Votre nom</label>
+        <input class="form-control" name="username" type="text" 
+               formControlName="username"
+               [ngClass]="{'is-invalid':submitted && f.username.errors}"
+              [(ngModel)]="user.name" required />
+              <div *ngIf="submitted && f['username'].errors " class="invalid-feedback">
+                    <div *ngIf="f['username'].errors.required">le Nom est requis</div>
+                </div>
+              <button type="submit" class="btn btn-block btn-danger m-t-3" >
+                Suivant
+                </button>
+            </form> 
+      </div>
+
+  </div>

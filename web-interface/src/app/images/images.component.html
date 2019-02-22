@@ -1,0 +1,36 @@
+
+  
+<div class="alert alert-primary col-md-2 offset-md-5" role="alert">
+        Veuillez choisir trois extraits
+      </div>
+      <div class="container-grid-4" > 
+
+        <div *ngFor="let image of images"  >
+            <a [routerLink]="" (click)="selectImage($event,image)">
+
+                <img   [ngClass]="{'image-selected': image.selected}"   height="150px" [src]="image.url" alt="Card image cap">
+
+                <div class="">
+                    <h5 class="">{{image.nom}}</h5>
+                    <p class="">
+                      {{image.description}}
+                    </p>  
+                  </div>
+
+              </a>
+
+        </div>
+
+        <div *ngIf="!images">
+            pas d'images
+        </div>
+
+      </div>
+
+      <div class="col-md-2 offset-md-5" >
+          <button class="btn btn-block btn-danger m-t-3" [routerLink]="['/user']">
+              Precedent
+              </button>
+      </div>
+     
+

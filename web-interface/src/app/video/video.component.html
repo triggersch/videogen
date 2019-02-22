@@ -1,0 +1,26 @@
+
+<div class="video-box" >
+
+<video width="700"  controls>
+    <source src="{{'/video/' + videoname}}" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+</div>
+<div class="container">
+    <div class="row">
+<div class="col-md-2 offset-md-2" >
+  <button class="btn btn-block btn-danger m-t-3" [routerLink]="['/user']">
+      Acceuil
+      </button>
+</div>
+<div class="col-md-2" >
+        <a class="btn btn-block btn-success m-t-3" href="/csv/csv-file.csv" role="button">Télécharger CSV</a>
+  </div>
+  <div class="col-md-2" >
+      <a class="btn btn-block btn-warning m-t-3" href="/playlist/playlist.txt" role="button" target="_blank" >Télécharger PlayList</a>
+</div>
+<div class="col-md-2" >
+    <a class="btn btn-block btn-primary m-t-3" href="/dsl/exampletp.videogen" role="button">Télécharger Modèle</a>
+</div>
+</div>
+</div>

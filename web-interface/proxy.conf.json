@@ -1,0 +1,55 @@
+{
+    "/api": {
+      "target": "http://localhost:8080",
+      "secure": false,
+      "pathRewrite": {
+        "^/api": "api"
+      },
+      "changeOrigin": true
+    },
+
+    "/video": {
+        "target": "http://localhost:8080",
+        "secure": false,
+        "pathRewrite": {
+          "^/video": "video"
+        },
+        "changeOrigin": true
+      },
+
+      "/img": {
+        "target": "http://localhost:8080",
+        "secure": false,
+        "pathRewrite": {
+          "^/img": "img"
+        },
+        "changeOrigin": true
+      },
+
+      "/csv": {
+        "target": "http://localhost:8080",
+        "secure": false,
+        "pathRewrite": {
+          "^/csv": "csv"
+        },
+        "changeOrigin": true
+      },
+
+      "/playlist": {
+        "target": "http://localhost:8080",
+        "secure": false,
+        "pathRewrite": {
+          "^/playlist": "playlist"
+        },
+        "changeOrigin": true
+      },
+
+      "/dsl": {
+        "target": "http://localhost:8080",
+        "secure": false,
+        "pathRewrite": {
+          "^/dsl": "dsl"
+        },
+        "changeOrigin": true
+      }
+   }
